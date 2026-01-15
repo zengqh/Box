@@ -100,6 +100,8 @@ public class SearchActivity extends BaseActivity {
     private SearchKeyboard keyboard;
     private TextView tvAddress;
     private ImageView ivQRCode;
+
+    private View remoteRoot;
     private SearchAdapter searchAdapter;
     private PinyinAdapter wordAdapter;
     private String searchTitle = "";
@@ -206,6 +208,7 @@ public class SearchActivity extends BaseActivity {
         tvClear = findViewById(R.id.tvClear);
         tvAddress = findViewById(R.id.tvAddress);
         ivQRCode = findViewById(R.id.ivQRCode);
+        remoteRoot = findViewById(R.id.remoteRoot);
         mGridView = findViewById(R.id.mGridView);
         keyboard = findViewById(R.id.keyBoardRoot);
         mGridViewWord = findViewById(R.id.mGridViewWord);
@@ -214,6 +217,8 @@ public class SearchActivity extends BaseActivity {
         wordAdapter = new PinyinAdapter();
         mGridViewWord.setAdapter(wordAdapter);
 
+        keyboard.setVisibility(View.GONE);
+        remoteRoot.setVisibility(View.GONE);
 
         wordAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override

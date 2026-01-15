@@ -4,11 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="@dimen/vs_420"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="@dimen/vs_20">
 
@@ -33,14 +33,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/vs_50"
+                android:layout_height="@dimen/vs_150"
                 android:layout_marginTop="@dimen/vs_10"
                 android:orientation="horizontal">
                 	
                 <com.github.tvbox.osc.ui.tv.widget.CustomEditText
                     android:id="@+id/etSearch"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/vs_50"
+                    android:layout_height="@dimen/vs_150"
                     android:layout_marginEnd="@dimen/vs_10"
                     android:layout_marginRight="@dimen/vs_10"
                     android:layout_weight="1"
@@ -54,12 +54,12 @@
                     android:paddingRight="@dimen/vs_10"
                     android:textColor="@android:color/white"
                     android:textColorHint="#70FFFFFF"
-                    android:textSize="@dimen/ts_20" />
+                    android:textSize="@dimen/ts_50" />
 
                 <ImageView
                     android:id="@+id/tvSearchCheckbox"
                     android:layout_width="@dimen/vs_50"
-                    android:layout_height="@dimen/vs_50"
+                    android:layout_height="@dimen/vs_150"
                     android:layout_gravity="center"
                     android:layout_margin="@dimen/vs_2"
                     android:background="@drawable/shape_user_focus"
@@ -71,21 +71,21 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/vs_50"
+                android:layout_height="@dimen/vs_150"
                 android:layout_marginTop="@dimen/vs_10"
                 android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/tvSearch"
                     android:layout_width="0mm"
-                    android:layout_height="@dimen/vs_50"
+                    android:layout_height="@dimen/vs_150"
                     android:layout_weight="1"
                     android:background="@drawable/shape_user_focus"
                     android:focusable="true"
                     android:gravity="center"
                     android:text="@string/act_search"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/ts_20" />
+                    android:textSize="@dimen/ts_50" />
 
                 <Space
                     android:layout_width="@dimen/vs_10"
@@ -94,14 +94,14 @@
                 <TextView
                     android:id="@+id/tvClear"
                     android:layout_width="0mm"
-                    android:layout_height="@dimen/vs_50"
+                    android:layout_height="@dimen/vs_150"
                     android:layout_weight="1"
                     android:background="@drawable/shape_user_focus"
                     android:focusable="true"
                     android:gravity="center"
                     android:text="@string/act_search_clr"
                     android:textColor="@android:color/white"
-                    android:textSize="@dimen/ts_20" />
+                    android:textSize="@dimen/ts_50" />
             </LinearLayout>
         </LinearLayout>
 
@@ -138,7 +138,7 @@
 
     <LinearLayout
         android:id="@+id/llWord"
-        android:layout_width="@dimen/vs_260"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:paddingTop="@dimen/vs_20"
@@ -148,7 +148,7 @@
             android:id="@+id/mHotSearch_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+
             android:layout_marginBottom="@dimen/vs_10"
             android:text="@string/act_search_trend"
             android:textAlignment="viewStart"

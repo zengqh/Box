@@ -88,7 +88,7 @@
         <activity
             android:name=".ui.activity.SearchActivity"
             android:windowSoftInputMode="stateHidden"
-            android:screenOrientation="fullSensor" />
+            android:screenOrientation="sensorPortrait" />
         <activity
             android:name=".ui.activity.FastSearchActivity"
             android:windowSoftInputMode="stateHidden"
